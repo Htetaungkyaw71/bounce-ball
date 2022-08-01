@@ -1,6 +1,6 @@
 let canvas = document.querySelector("canvas")
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = window.innerWidth - 10;
+canvas.height = window.innerHeight - 10;
 
 
 let c = canvas.getContext("2d");
@@ -72,8 +72,8 @@ function Circle(x,y,dx,dy,radius){
 }
 
 window.addEventListener('resize',()=>{
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth - 10;
+    canvas.height = window.innerHeight - 10;
     init()
 })
 
